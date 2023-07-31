@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- ページの作成者 -->
+     <meta name="author" content="Hayato NAKAMURA">
+     <!-- ページ内容を表すキーワード -->
+     <meta name="grnnshinn" content="HTML, CSS, Javascript">
+     <!-- CSSとの紐づけ -->
+    <link rel="stylesheet" href="./CSS/main.CSS"> 
+    <title>Document</title>
+</head>
+<body>
+    <!-- 見出し -->
+    <header id="top">
+        <h1>八重神子とじゃんけん</h1>
+        <nav>
+            ここでは八重神子とじゃんけんをすることが出来ます
+        </nav>
+    </header>
+
+        <div class="container">
+            <main>
+                <h2></h2>
+                <div>
+                    <img src="./media/yaemiko.png" width="600" height="320" alt="基本情報">
+                </div>
+                -------------------------------------------------------------------------------
+            
+                <h2>目次</h2>
+            <div class="mokuji">
+                <ul>
+                    <!-- ハイパーリンクで次のページへ -->
+                    <li><a href="./1.html">八重神子（ p.1 ）</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./2.html">刻晴（ p.2 ）</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./3.html">八重神子とじゃんけん（ p.3 ）</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./4.html">刻晴とじゃんけん（ p.3 ）</a></li>
+                </ul>
+            
+    -------------------------------------------------------------------------------
+                <h2>下のボタンでプレイヤーの手を決めてください</h2>
+                <div>
+                    <!-- htmlからJavaScriptの関数 -->
+                    <button type="button" onclick="yaemiko(1)">グー</button>
+                    <button type="button" onclick="yaemiko(2)">チョキ</button>
+                    <button type="button" onclick="yaemiko(3)">パー</button>
+
+                    <p>「プレイヤー」</p>
+                    <p id="hello">選んでください</p>
+
+                    <p>「八重神子」</p>
+                    <p id="wow">選択待ち</p>
+
+                    <p>「勝敗」</p>
+                    <p id="kekka">結果</p>
+                </div>
+            </main>
+
+            <aside>
+                <img src="./media/tatie.jpg" width="500" height="1200" alt="立ち絵">
+            </aside>
+        </div>
+
+<a href="#top">トップに戻る</a>
+
+<!-- 外部のjavascriptファイルを読み込む場合 -->
+<script src="./JS/main.js"></script>
+
+</body>
+</html>

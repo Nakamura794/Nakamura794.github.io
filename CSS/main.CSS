@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+body {
+    font-size: 16px;
+}
+
+h1{
+    background-color: linen;
+}
+
+.mokuji > ul {
+    list-style: none;
+}
+
+#menu > ul {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main {
+    order: 0;
+    flex: 0 1 auto;
+}
+
+aside {
+    order: 1;
+    flex: 0 1 auto;
+}
+
+/* 表全体 */
+table {
+    border: 1px solid red;
+}
+
+/* ヘッダー要素 */
+th{
+    border: 1px double blue;
+}
+
+/* 要素 */
+td{
+    border: 1px dashed darkgreen;
+    border-radius: 8px;
+}
+
+/* 未訪問のリンク */
+a:link {
+    color: blue;
+}
+
+/* 訪問済みのリンク */
+a:visited {
+    color: black;
+}
+
+/* ポインタが乗っている状態 */
+a:hover {
+    font-size: 1.3rem;
+    color: red;
+}
